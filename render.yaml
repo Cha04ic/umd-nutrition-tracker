@@ -7,9 +7,9 @@ services:
     schedule: "50 4 * * 1"
     buildCommand: npm install
     startCommand: >
-      /bin/bash -lc "export UMD_DINING_FETCH_NUTRITION=true
-      START_DATE=$(date +%m/%d/%Y)
-      END_DATE=$(date -d '+6 day' +%m/%d/%Y)
+      /bin/bash -lc "export UMD_DINING_FETCH_NUTRITION=true;
+      export START_DATE=$(date +%m/%d/%Y);
+      export END_DATE=$(date -d '+6 day' +%m/%d/%Y);
       node --import tsx scripts/backfill-umd-menu.mjs"
     envVars:
       - key: DATABASE_URL
