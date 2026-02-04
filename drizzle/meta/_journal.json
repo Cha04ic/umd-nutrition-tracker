@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1768330851587,
+      "tag": "0000_bright_alex_power",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1768331365106,
+      "tag": "0001_brief_maria_hill",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1768513113322,
+      "tag": "0002_high_sauron",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1768947212695,
+      "tag": "0003_brainy_talon",
+      "breakpoints": true
+    }
+  ]
+}

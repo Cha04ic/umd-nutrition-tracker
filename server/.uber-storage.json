@@ -1,0 +1,125 @@
+{
+  "cookies": [
+    {
+      "name": "_ua",
+      "value": "{\"session_id\":\"17a8d376-4ab6-44dd-968f-e17225d024d9\",\"session_time_ms\":1768621761732}",
+      "domain": "www.uber.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "marketing_vistor_id",
+      "value": "03adfa8f-351f-4942-b8ac-bd555191ed4c",
+      "domain": ".uber.com",
+      "path": "/",
+      "expires": 1800157761.840427,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "BAf_tD4mtPi_M7l1f2wTVBf9On.W896gMyc_UwthUjA-1768621761-1.0.1.1-c00166sHQyC_mCyZFtuU43PvMeQehW4IeeKlAamk4G351pv9De9E6tBdvAg3ukwTx9E4m9xAhWgKOSCpSu8R2G7wokRh2.1iRp7mje_Ck_M",
+      "domain": ".uber.com",
+      "path": "/",
+      "expires": 1768623561.512081,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "jwt-session",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InNsYXRlLWV4cGlyZXMtYXQiOjE3Njg2MjM1NjE4NDJ9LCJpYXQiOjE3Njg2MjE3NjEsImV4cCI6MTc2ODcwODE2MX0.IfceXu8x_VcjYtZyrM94qX1P0K-j50mtM6VCzRZwiws",
+      "domain": "www.uber.com",
+      "path": "/",
+      "expires": 1768708161.657958,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "user_city_ids",
+      "value": "8",
+      "domain": "www.uber.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "uber_sites_geolocalization",
+      "value": "{%22best%22:{%22localeCode%22:%22en%22%2C%22countryCode%22:%22GLOBAL%22%2C%22territoryGeoPoint%22:{%22latitude%22:38.9%2C%22longitude%22:-77.04}%2C%22territoryId%22:8%2C%22territoryName%22:%22Washington%20D.C.%22%2C%22territorySlug%22:%22washington-dc%22}%2C%22url%22:{%22localeCode%22:%22en%22%2C%22countryCode%22:%22GLOBAL%22}%2C%22user%22:{%22countryCode%22:%22US%22%2C%22territoryId%22:8%2C%22territoryGeoJson%22:[[{%22lat%22:39.466012%2C%22lng%22:-78.869276}%2C{%22lat%22:39.466012%2C%22lng%22:-76.140835}%2C{%22lat%22:37.510214%2C%22lng%22:-76.140835}%2C{%22lat%22:37.510214%2C%22lng%22:-78.869276}]]%2C%22territoryGeoPoint%22:{%22latitude%22:38.9%2C%22longitude%22:-77.04}%2C%22localeCode%22:%22en%22%2C%22territorySlug%22:%22washington-dc%22%2C%22territoryName%22:%22Washington%20D.C.%22%2C%22productGeofenceUUID%22:%22b29f1997-3853-4b59-84b6-77f58f77c877%22}}",
+      "domain": ".www.uber.com",
+      "path": "/",
+      "expires": 1800157761.840718,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "utag_main__sn",
+      "value": "1",
+      "domain": ".uber.com",
+      "path": "/",
+      "expires": 1800157762,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "utag_main__se",
+      "value": "1%3Bexp-session",
+      "domain": ".uber.com",
+      "path": "/",
+      "expires": 1768623562,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "utag_main__ss",
+      "value": "1%3Bexp-session",
+      "domain": ".uber.com",
+      "path": "/",
+      "expires": 1768623562,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "utag_main__st",
+      "value": "1768623562195%3Bexp-session",
+      "domain": ".uber.com",
+      "path": "/",
+      "expires": 1768623562,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "utag_main_ses_id",
+      "value": "1768621762195%3Bexp-session",
+      "domain": ".uber.com",
+      "path": "/",
+      "expires": 1768623562,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "utag_main__pn",
+      "value": "1%3Bexp-session",
+      "domain": ".uber.com",
+      "path": "/",
+      "expires": 1768623562,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}
