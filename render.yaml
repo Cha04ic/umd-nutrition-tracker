@@ -2,7 +2,7 @@ services:
   - type: cron
     name: umd-dining-scraper
     runtime: node
-    repo: https://github.com/your-org/umd-nutrition-tracker
+    repo: https://github.com/Cha04ic/umd-nutrition-tracker
     branch: main
     schedule: "50 4 * * 1"
     buildCommand: npm install
