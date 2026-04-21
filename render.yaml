@@ -1,10 +1,29 @@
 services:
+  - type: web
+    name: umd-nutrition-tracker
+    runtime: node
+    repo: https://github.com/Cha04ic/umd-nutrition-tracker
+    branch: main
+    buildCommand: npm install && npm run build
+    startCommand: node dist/index.js
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GOOGLE_CLIENT_SECRET
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: NODE_ENV
+        value: production
+
   - type: cron
     name: umd-dining-scraper
     runtime: node
     repo: https://github.com/Cha04ic/umd-nutrition-tracker
     branch: main
-    schedule: "50 4 * * 1"
+    schedule: "0 11 * * 1"
     buildCommand: npm install
     startCommand: >
       /bin/bash -lc "export UMD_DINING_FETCH_NUTRITION=true;
