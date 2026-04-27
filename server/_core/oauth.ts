@@ -207,4 +207,42 @@ export function registerOAuthRoutes(app: Express) {
       res.status(500).json({ error: "OAuth callback failed" });
     }
   });
+
+  // Mobile OAuth callback — redirects to app deep link with session token
+  app.get("/api/oauth/mobile-callback", async (req: Request, res: Response) => {
+    const code = getQueryParam(req, "code");
+    if (!code) {
+      res.redirect("nutritionmobile://auth?error=missing_code");
+      return;
+    }
+    try {
+      if (!ENV.googleClientId || !ENV.googleClientSecret) {
+        res.redirect("nutritionmobile://auth?error=not_configured");
+        return;
+      }
+      const redirectUri = `${req.protocol}://${req.get("host")}/api/oauth/mobile-callback`;
+      const tokenResponse = await exchangeGoogleCodeForToken(code, redirectUri);
+      const googleUser = await getGoogleUserInfo(tokenResponse.access_token);
+      if (!googleUser.sub) {
+        res.redirect("nutritionmobile://auth?error=no_user");
+        return;
+      }
+      await db.upsertUser({
+        openId: googleUser.sub,
+        name: googleUser.name ?? null,
+        email: googleUser.email ?? null,
+        loginMethod: "google",
+        lastSignedIn: new Date(),
+      });
+      const sessionToken = await sdk.createSessionToken(googleUser.sub, {
+        name: googleUser.name || "",
+        email: googleUser.email,
+        expiresInMs: ONE_YEAR_MS,
+      });
+      res.redirect(`nutritionmobile://auth?token=${encodeURIComponent(sessionToken)}`);
+    } catch (error) {
+      console.error("[OAuth] Mobile callback failed", error);
+      res.redirect("nutritionmobile://auth?error=callback_failed");
+    }
+  });
 }
